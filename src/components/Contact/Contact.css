@@ -1,0 +1,27 @@
+.section-contact .links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.section-contact .link {
+  cursor: pointer;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2rem;
+}
+
+.section-contact .email {
+  font-size: 1.2rem;
+  top: -0.6rem;
+  position: relative;
+}
+
+@media screen and (max-width: 900px) {
+  .section-contact .links {
+    flex-direction: column;
+    line-height: 1.3rem;
+  }
+  .section-contact .email {
+    top: 0.7rem;
+  }
+}
