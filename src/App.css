@@ -3,6 +3,11 @@
   width: 100%;
   text-align: center;
 }
+main {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  max-height: 100vh;
+}
 .header {
   font-family: 'Bebas Neue', sans-serif;
   text-align: left;
@@ -27,4 +32,6 @@
   color: white;
   position: relative;
   border: 15px solid white;
+
+  scroll-snap-align: start;
 }
