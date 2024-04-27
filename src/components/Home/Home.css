@@ -1,0 +1,9 @@
+.title-section {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+.subtitle {
+  margin-top: -5.5rem;
+  font-size: 0.8rem;
+}
