@@ -18,7 +18,7 @@ const Gradient: React.FC = () => {
   const [step, setStep] = useState<number>(0)
 
   useEffect(() => {
-    const intervalId = setInterval(updateGradient, 100)
+    const intervalId = setInterval(updateGradient, 5)
     return () => clearInterval(intervalId)
   }, [step, colorIndices])
 
