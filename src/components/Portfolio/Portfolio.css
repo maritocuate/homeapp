@@ -1,4 +1,20 @@
 .portfolio-section img {
-  width: 2rem;
-  height: 3rem;
+  width: auto;
+  height: 35vh;
+  object-fit: cover;
+  border: 0.6rem solid white;
+}
+.portfolio-section .card-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.card-info .card-title {
+  font-weight: 700;
+  margin-bottom: -0.2rem;
 }
