@@ -1,3 +1,11 @@
+.portfolio-section {
+  display: flex;
+  overflow-x: scroll;
+  padding: 1rem 0;
+}
+.portfolio-section .card {
+  margin: 0 3rem;
+}
 .portfolio-section img {
   width: auto;
   height: 35vh;

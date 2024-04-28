@@ -43,13 +43,15 @@ export default function Portfolio() {
   return (
     <div className="section">
       <section className="portfolio-section">
-        <div className="card">
-          <img src={imgChat} alt="chat" />
-          <div className="card-info">
-            <span className="card-title">Chat</span>
-            <span>A simple chat app</span>
+        {projects.map(project => (
+          <div className="card" key={project.url}>
+            <img src={imgChat} alt="chat" />
+            <div className="card-info">
+              <span className="card-title">{project.description}</span>
+              <span>{project.tech}</span>
+            </div>
           </div>
-        </div>
+        ))}
       </section>
     </div>
   )
