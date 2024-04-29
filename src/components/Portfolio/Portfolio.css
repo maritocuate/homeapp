@@ -5,24 +5,23 @@
 }
 .portfolio-section .card {
   margin: 0 3rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
 }
+
 .portfolio-section img {
   width: auto;
   height: 35vh;
   object-fit: cover;
   border: 0.6rem solid white;
+  margin-bottom: -5px;
 }
-.portfolio-section .card-content {
-  display: flex;
-  flex-direction: column;
-}
-
-.card-info {
-  display: flex;
-  flex-direction: column;
+.portfolio-section .image-text {
+  position: relative;
+  font-family: 'Bebas Neue', sans-serif;
+  padding: 5px 9px 3px 9px;
   text-align: left;
-}
-.card-info .card-title {
-  font-weight: 700;
-  margin-bottom: -0.2rem;
+  background-color: white;
+  color: black;
 }
