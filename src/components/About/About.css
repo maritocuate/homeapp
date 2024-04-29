@@ -1,0 +1,16 @@
+.about-section {
+  display: flex;
+  align-items: start;
+  max-width: 50%;
+  gap: 1.7rem;
+}
+
+.about-section .header {
+  margin: 0;
+  text-align: right;
+}
+.about-section .about-description {
+  margin: -0.15rem;
+  text-align: left;
+  line-height: 1.24rem;
+}
