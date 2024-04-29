@@ -1,13 +1,25 @@
 .portfolio-section {
   display: flex;
   overflow-x: scroll;
+  scrollbar-color: transparent transparent;
+  width: 100%;
   padding: 1rem 0;
+  scroll-snap-type: x mandatory;
 }
+
+.portfolio-section .card:first-child {
+  margin-left: 10vh;
+}
+.portfolio-section .card:last-child {
+  margin-right: 10vh;
+}
+
 .portfolio-section .card {
-  margin: 0 3rem;
+  margin: 0 2rem;
   text-align: left;
   display: flex;
   flex-direction: column;
+  scroll-snap-align: center;
 }
 
 .portfolio-section img {
