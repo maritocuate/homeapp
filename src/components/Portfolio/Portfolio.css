@@ -1,10 +1,15 @@
 .portfolio-section {
   display: flex;
-  overflow-x: scroll;
   scrollbar-color: transparent transparent;
   width: 100%;
   padding: 1rem 0;
+  overflow-x: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
   scroll-snap-type: x mandatory;
+}
+.portfolio-section::-webkit-scrollbar {
+  display: none;
 }
 
 .portfolio-section .card:first-child {
