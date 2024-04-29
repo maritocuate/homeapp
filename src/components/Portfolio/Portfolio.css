@@ -42,3 +42,10 @@
   background-color: white;
   color: black;
 }
+
+@media screen and (max-width: 900px) {
+  .portfolio-section img {
+    width: 35vh;
+    height: auto;
+  }
+}
