@@ -4,6 +4,7 @@ export default function Contact() {
   const links = {
     linkedin: 'https://www.linkedin.com/in/mario-quiroga-73299527/',
     github: 'https://github.com/maritocuate',
+    resume: '/resume.pdf',
   }
 
   return (
@@ -21,6 +22,12 @@ export default function Contact() {
             onClick={() => window.open(links.github, '_blank')}
           >
             github
+          </span>
+          <span
+            className="link"
+            onClick={() => window.open(links.resume, '_blank')}
+          >
+            resume
           </span>
         </div>
         <span className="email">MARIO300@GMAIL.COM</span>

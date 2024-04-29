@@ -13,6 +13,7 @@
 .section-contact .email {
   font-size: 1.2rem;
   top: -0.6rem;
+  letter-spacing: 0.34rem;
   position: relative;
 }
 
@@ -23,5 +24,6 @@
   }
   .section-contact .email {
     top: 0.7rem;
+    letter-spacing: 0.1rem;
   }
 }
