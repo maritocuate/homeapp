@@ -19,6 +19,9 @@
   margin-right: 10vh;
 }
 
+.portfolio-section .card .card-info {
+  display: none;
+}
 .portfolio-section .card {
   margin: 0 2rem;
   text-align: left;
@@ -41,6 +44,7 @@
   text-align: left;
   background-color: white;
   color: black;
+  bottom: 30px;
 }
 
 @media screen and (max-width: 900px) {
