@@ -14,7 +14,8 @@
 }
 
 .portfolio-section .card {
-  display: block;
+  display: flex;
+  justify-content: center;
   margin: 0 2rem;
   padding: 5rem;
   position: relative;
@@ -47,8 +48,9 @@
 
 .portfolio-section .image {
   display: flex;
+  justify-content: center;
   position: relative;
-  width: 100%;
+  width: calc(100% - 500px);
   height: 100%;
 }
 
