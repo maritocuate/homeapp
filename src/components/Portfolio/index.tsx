@@ -19,10 +19,10 @@ export default function Portfolio() {
           opacity: 0,
           scrollTrigger: {
             trigger: bg,
-            start: 'bottom 90%',
-            end: 'top 20%',
+            start: '70% bottom',
+            end: 'top top',
             scrub: true,
-            // markers: true,
+            //markers: true,
           },
         })
       })
