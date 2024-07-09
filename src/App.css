@@ -6,7 +6,7 @@
 main {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
-  max-height: 100vh;
+  /* max-height: 100vh; */
 }
 .header {
   font-family: 'Bebas Neue', sans-serif;
@@ -34,4 +34,8 @@ main {
   border: 15px solid white;
 
   scroll-snap-align: start;
+}
+
+button {
+  border-radius: 0 !important;
 }

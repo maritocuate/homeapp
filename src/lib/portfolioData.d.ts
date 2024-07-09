@@ -1,6 +1,7 @@
 declare module './portfolioData' {
   export interface Project {
     screenshot: string
+    title: string
     description: string
     tech: string
     url: string
