@@ -10,53 +10,84 @@ gsap.registerPlugin(useGSAP, ScrollTrigger)
 export default function Portfolio() {
   const main = useRef()
 
-  /* useGSAP(
+  useGSAP(
     () => {
-      const textImages = gsap.utils.toArray('.image-text')
+      const boxes = gsap.utils.toArray('.card-background')
+      boxes.forEach(bg => {
+        gsap.from(bg, {
+          scale: 0.95,
+          opacity: 0,
+          scrollTrigger: {
+            trigger: bg,
+            start: 'bottom 90%',
+            end: 'top 20%',
+            scrub: true,
+            /* markers: true, */
+          },
+        })
+      })
+
+      const textImages = gsap.utils.toArray('.card-title')
       textImages.forEach(txt => {
-        gsap.to(txt, {
-          left: '400px',
+        gsap.from(txt, {
+          left: '120px',
           scrollTrigger: {
             trigger: txt,
-            start: 'bottom bottom',
+            start: 'bottom 90%',
             end: 'top 50%',
             scrub: true,
-            markers: true,
+            //markers: true,
+          },
+        })
+      })
+
+      const description = gsap.utils.toArray('.text-description')
+      description.forEach(txt => {
+        gsap.from(txt, {
+          left: '30px',
+          opacity: 0,
+          scrollTrigger: {
+            trigger: txt,
+            start: 'bottom 85%',
+            end: 'top 50%',
+            scrub: true,
+            //markers: true,
+          },
+        })
+      })
+
+      const buttons = gsap.utils.toArray('button')
+      buttons.forEach(btn => {
+        gsap.from(btn, {
+          opacity: 0,
+          left: '30px',
+          scrollTrigger: {
+            trigger: btn,
+            start: 'bottom 80%',
+            end: 'top 50%',
+            scrub: true,
+            //markers: true,
           },
         })
       })
 
       const images = gsap.utils.toArray('.image img')
       images.forEach(img => {
-        gsap.to(img, {
-          left: '-200px',
+        gsap.from(img, {
+          top: '30px',
+          opacity: 0,
           scrollTrigger: {
             trigger: img,
-            start: 'bottom bottom',
-            end: 'top 50%',
+            start: 'bottom 80%',
+            end: 'top 30%',
             scrub: true,
-            markers: true,
-          },
-        })
-      })
-
-      const boxes = gsap.utils.toArray('.card-background')
-      boxes.forEach(bg => {
-        gsap.to(bg, {
-          scale: 1,
-          opacity: 1,
-          scrollTrigger: {
-            trigger: bg,
-            start: 'bottom bottom',
-            end: 'top 20%',
-            scrub: true,
-            markers: true,
+            //markers: true,
           },
         })
       })
     },
     { scope: main }
-  ) */
+  )
 
   return (
     <div className="portfolio-section" ref={main}>
@@ -66,7 +97,7 @@ export default function Portfolio() {
           <span className="card-background"></span>
           <span className="image">
             <span className="sidepanel">
-              <span className="header card-info">{project.title}</span>
+              <span className="header card-title">{project.title}</span>
               <span className="text-description">
                 {project.description}
                 <br />
