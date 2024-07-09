@@ -8,11 +8,11 @@ import './Portfolio.css'
 gsap.registerPlugin(useGSAP, ScrollTrigger)
 
 export default function Portfolio() {
-  const main = useRef()
+  const main = useRef<HTMLDivElement | null>(null)
 
   useGSAP(
     () => {
-      const boxes = gsap.utils.toArray('.card-background')
+      const boxes = gsap.utils.toArray('.card-background') as HTMLDivElement[]
       boxes.forEach(bg => {
         gsap.from(bg, {
           scale: 0.95,
@@ -27,7 +27,7 @@ export default function Portfolio() {
         })
       })
 
-      const textImages = gsap.utils.toArray('.card-title')
+      const textImages = gsap.utils.toArray('.card-title') as HTMLDivElement[]
       textImages.forEach(txt => {
         gsap.from(txt, {
           left: '120px',
@@ -41,7 +41,9 @@ export default function Portfolio() {
         })
       })
 
-      const description = gsap.utils.toArray('.text-description')
+      const description = gsap.utils.toArray(
+        '.text-description'
+      ) as HTMLDivElement[]
       description.forEach(txt => {
         gsap.from(txt, {
           left: '30px',
@@ -56,7 +58,7 @@ export default function Portfolio() {
         })
       })
 
-      const buttons = gsap.utils.toArray('button')
+      const buttons = gsap.utils.toArray('button') as HTMLDivElement[]
       buttons.forEach(btn => {
         gsap.from(btn, {
           opacity: 0,
@@ -71,7 +73,7 @@ export default function Portfolio() {
         })
       })
 
-      const images = gsap.utils.toArray('.image img')
+      const images = gsap.utils.toArray('.image img') as HTMLDivElement[]
       images.forEach(img => {
         gsap.from(img, {
           top: '30px',
