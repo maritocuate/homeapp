@@ -10,7 +10,7 @@ gsap.registerPlugin(useGSAP, ScrollTrigger)
 export default function Portfolio() {
   const main = useRef()
 
-  useGSAP(
+  /* useGSAP(
     () => {
       const boxes = gsap.utils.toArray('.card-background')
       boxes.forEach(bg => {
@@ -22,7 +22,7 @@ export default function Portfolio() {
             start: 'bottom 90%',
             end: 'top 20%',
             scrub: true,
-            /* markers: true, */
+            // markers: true,
           },
         })
       })
@@ -78,7 +78,7 @@ export default function Portfolio() {
           opacity: 0,
           scrollTrigger: {
             trigger: img,
-            start: 'bottom 80%',
+            start: 'bottom 90%',
             end: 'top 30%',
             scrub: true,
             //markers: true,
@@ -87,7 +87,7 @@ export default function Portfolio() {
       })
     },
     { scope: main }
-  )
+  ) */
 
   return (
     <div className="portfolio-section" ref={main}>
