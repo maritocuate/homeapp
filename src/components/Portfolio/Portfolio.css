@@ -90,16 +90,12 @@
 @media screen and (max-width: 900px) {
   .portfolio-section .card {
     margin: 0;
-    width: 28rem;
+    max-width: 28rem;
+    width: calc(100% - 110px);
   }
 
   .portfolio-section .card-background {
     display: none;
-  }
-
-  .portfolio-section img {
-    width: 35vh;
-    height: auto;
   }
   .portfolio-section .image {
     width: 100%;
@@ -112,9 +108,10 @@
   }
   .portfolio-section .card .card-title {
     text-align: left;
+    opacity: 1;
   }
   .portfolio-section img {
-    width: 100%;
+    width: calc(100% - 20px);
     top: 1rem;
     max-width: 27rem;
   }

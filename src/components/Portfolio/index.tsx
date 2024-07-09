@@ -31,6 +31,7 @@ export default function Portfolio() {
       textImages.forEach(txt => {
         gsap.from(txt, {
           left: '120px',
+          opacity: 0,
           scrollTrigger: {
             trigger: txt,
             start: 'bottom 90%',
