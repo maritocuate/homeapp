@@ -4,6 +4,10 @@
   gap: 1rem;
 }
 
+a {
+  text-decoration: none;
+  color: inherit !important;
+}
 .section-contact .link {
   cursor: pointer;
   font-family: 'Bebas Neue', sans-serif;

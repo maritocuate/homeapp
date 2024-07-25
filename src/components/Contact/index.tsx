@@ -23,14 +23,13 @@ export default function Contact() {
           >
             github
           </span>
-          <span
-            className="link"
-            onClick={() =>
-              window.open(window.location.origin + links.resume, '_blank')
-            }
+          <a
+            href={window.location.origin + links.resume}
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            resume
-          </span>
+            <span className="link">resume</span>
+          </a>
         </div>
         <span className="email">MARIO300@GMAIL.COM</span>
       </section>
