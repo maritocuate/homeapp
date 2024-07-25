@@ -25,7 +25,9 @@ export default function Contact() {
           </span>
           <span
             className="link"
-            onClick={() => window.open(links.resume, '_blank')}
+            onClick={() =>
+              window.open(window.location.origin + links.resume, '_blank')
+            }
           >
             resume
           </span>
