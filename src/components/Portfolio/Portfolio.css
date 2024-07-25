@@ -75,16 +75,30 @@
   text-align: right;
 }
 
-.portfolio-section .card button {
+.portfolio-section .card .buttons {
   position: relative;
-  bottom: -6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 0.5rem;
+  bottom: -5px;
+  margin-left: 8px;
+}
+.buttons button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: black;
+  padding: 10px;
 }
 
 .portfolio-section .image-text {
   position: relative;
   font-family: 'Bebas Neue', sans-serif;
-  color: rgba(208, 28, 190, 0.8);
+  color: rgba(241, 255, 11, 0.8);
   text-align: right;
+  bottom: -12px;
 }
 
 @media screen and (max-width: 900px) {

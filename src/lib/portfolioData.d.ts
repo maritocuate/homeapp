@@ -5,6 +5,7 @@ declare module './portfolioData' {
     description: string
     tech: string
     url: string
+    source: string
   }
 
   const projects: Project[]
