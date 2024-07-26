@@ -37,6 +37,17 @@ export default defineConfig({
           },
         ],
       },
+      workbox: {
+        runtimeCaching: [
+          {
+            urlPattern: /\.(?:pdf)$/,
+            handler: 'StaleWhileRevalidate',
+            options: {
+              cacheName: 'pdf-cache',
+            },
+          },
+        ],
+      },
     }),
   ],
   build: {
