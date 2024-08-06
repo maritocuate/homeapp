@@ -24,7 +24,7 @@ export default function Contact() {
             github
           </span>
           <a
-            href={window.location.origin + links.resume}
+            href={'https://marioquiroga.vercel.app' + links.resume}
             target="_blank"
             rel="noopener noreferrer"
           >
