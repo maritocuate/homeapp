@@ -1,0 +1,8 @@
+[{
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "app.vercel.marioquiroga.twa",
+        "sha256_cert_fingerprints": ["2E:95:01:CC:A3:B2:31:70:EF:00:E0:90:FF:7C:4B:5E:26:A4:C0:8B:8A:FC:AF:44:3A:B0:85:6A:E5:1F:75:75"]
+      }
+    }]
