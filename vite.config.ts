@@ -16,7 +16,7 @@ export default defineConfig({
         short_name: 'Mario Quiroga',
         description: "Mario Quiroga's web portfolio",
         theme_color: '#98509f',
-        background_color: '#98509f',
+        background_color: '#fff',
         icons: [
           {
             src: 'pwa-64x64.png',

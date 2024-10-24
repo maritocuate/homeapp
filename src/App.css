@@ -35,6 +35,14 @@ main {
 
   scroll-snap-align: start;
 }
+@media screen and (max-width: 900px) {
+  .section {
+    border-radius: 2rem;
+    width: calc(100% - 50px);
+    height: calc(100vh - 50px);
+    border-width: 25px;
+  }
+}
 
 button {
   border-radius: 0 !important;
