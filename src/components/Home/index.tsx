@@ -8,7 +8,7 @@ export default function Home() {
     if (text) {
       let shadow = ''
       for (let i = 1; i < 17; i++) {
-        shadow += `${shadow ? ',' : ''} ${-i + 1}px ${i + 1}px 0 #d9d9d9`
+        shadow += `${shadow ? ',' : ''} ${-i + 0.01}px ${i + 1}px 0 #d9d9d9`
       }
       text.style.textShadow = shadow
     }
