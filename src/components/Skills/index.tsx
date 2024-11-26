@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { SetStateAction, useState } from 'react'
 import './Skills.css'
 
 const socialMedia = [
@@ -14,9 +14,9 @@ const socialMedia = [
   { type: 'swift' },
 ]
 export default function Skills() {
-  const [pressedIndex, setPressedIndex] = useState(null)
+  const [pressedIndex, setPressedIndex] = useState<null | number>(null)
 
-  const handlePressStart = index => {
+  const handlePressStart = (index: number) => {
     setPressedIndex(index)
   }
   const handlePressEnd = () => {
