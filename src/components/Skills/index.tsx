@@ -7,6 +7,10 @@ const socialMedia = [
   { type: 'gsap' },
   { type: 'jest' },
   { type: 'git' },
+  { type: 'sass' },
+  { type: 'node' },
+  { type: 'postgresql' },
+  { type: 'swift' },
 ]
 export default function Skills() {
   return (
