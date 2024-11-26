@@ -19,7 +19,6 @@ export default function Skills() {
   const [pressedIndex, setPressedIndex] = useState<null | number>(null)
   const [indexTheme, setIndexTheme] = useState(0)
   const synth = new Tone.Synth().toDestination()
-  const now = Tone.now()
 
   const handlePressStart = (index: number) => {
     setPressedIndex(index)
@@ -32,7 +31,7 @@ export default function Skills() {
   }
 
   const playNote = () => {
-    console.log(indexTheme)
+    const now = Tone.now()
     synth.triggerAttack(odeToJoy[indexTheme], now)
     synth.triggerRelease(now + 0.5)
   }
