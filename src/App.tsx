@@ -3,6 +3,7 @@ import About from './components/About'
 import Contact from './components/Contact'
 import Gradient from './components/Gradient'
 import Home from './components/Home'
+import Skills from './components/Skills'
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Gradient />
       <Home />
       <About />
+      <Skills />
       <Contact />
     </main>
   )
