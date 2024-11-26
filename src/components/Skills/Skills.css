@@ -35,40 +35,12 @@ body {
   padding: calc(48px * 1.5 / 4); /* $tile-padding */
   transform-style: preserve-3d;
   transform: translateZ(calc(2 * (48px * 1.5 + (48px * 1.5 / 4) * 2)));
-  animation: tile-fade-in 0.5s linear forwards;
+  animation: tile-fade-in 0.2s linear forwards;
 }
 
-.tile:hover .item {
-  transform: translateZ(calc(5 * (48px * 1.5 / 8)));
-}
-
-.tile:hover .shadow {
-  transform: scale(0.9);
-}
-
-.tile:nth-child(1) {
-  animation-delay: 0.35s;
-}
-.tile:nth-child(2) {
-  animation-delay: 0.3s;
-}
-.tile:nth-child(3) {
-  animation-delay: 0.25s;
-}
-.tile:nth-child(4) {
-  animation-delay: 0.2s;
-}
-.tile:nth-child(5) {
-  animation-delay: 0.15s;
-}
-.tile:nth-child(6) {
-  animation-delay: 0.1s;
-}
-.tile:nth-child(7) {
-  animation-delay: 0.05s;
-}
-.tile:nth-child(8) {
-  animation-delay: 0s;
+.tile .item.pressed {
+  transform: translateZ(10px);
+  background-color: #f0f0f0;
 }
 
 @keyframes tile-fade-in {
@@ -82,9 +54,7 @@ body {
 
 .tile .shadow {
   position: absolute;
-  left: calc(
-    (48px * 1.5 / 4) + (48px * 1.5 / 8)
-  ); /* $tile-padding + $tile-offset */
+  left: calc((48px * 1.5 / 4) + (48px * 1.5 / 8));
   right: calc((48px * 1.5 / 4) + (48px * 1.5 / 8));
   top: calc((48px * 1.5 / 4) + (48px * 1.5 / 8));
   bottom: calc((48px * 1.5 / 4) + (48px * 1.5 / 8));
@@ -108,7 +78,7 @@ body {
   position: relative;
   transform-style: preserve-3d;
   transform: translateZ(calc(2 * (48px * 1.5 / 8))); /* $tile-offset */
-  transition: transform 0.2s ease-in-out;
+  transition: transform 0.1s ease-in-out;
   z-index: 2;
 }
 

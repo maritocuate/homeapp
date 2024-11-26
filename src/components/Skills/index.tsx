@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import './Skills.css'
 
 const socialMedia = [
@@ -13,6 +14,15 @@ const socialMedia = [
   { type: 'swift' },
 ]
 export default function Skills() {
+  const [pressedIndex, setPressedIndex] = useState(null)
+
+  const handlePressStart = index => {
+    setPressedIndex(index)
+  }
+  const handlePressEnd = () => {
+    setPressedIndex(null)
+  }
+
   return (
     <div className="section">
       <div className="container-skills">
@@ -20,7 +30,14 @@ export default function Skills() {
           {socialMedia.map(({ type }, index) => (
             <div className="tile" key={index}>
               <div className="shadow"></div>
-              <div className="item">
+              <div
+                className={`item ${pressedIndex === index ? 'pressed' : ''}`}
+                onMouseDown={() => handlePressStart(index)}
+                onMouseUp={handlePressEnd}
+                onMouseLeave={handlePressEnd}
+                onTouchStart={() => handlePressStart(index)}
+                onTouchEnd={handlePressEnd}
+              >
                 <img
                   src={`/images/${type}.png`}
                   alt={type}
