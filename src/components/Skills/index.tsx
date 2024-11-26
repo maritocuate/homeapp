@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import React, { useState } from 'react'
 import * as Tone from 'tone'
 import './Skills.css'
 
@@ -26,7 +26,8 @@ export default function Skills() {
     if (indexTheme === odeToJoy.length - 1) setIndexTheme(0)
     playNote()
   }
-  const handlePressEnd = () => {
+  const handlePressEnd = (e: React.MouseEvent | React.TouchEvent) => {
+    e.preventDefault()
     setPressedIndex(null)
   }
 
@@ -47,7 +48,7 @@ export default function Skills() {
                 className={`item ${pressedIndex === index ? 'pressed' : ''}`}
                 onMouseDown={() => handlePressStart(index)}
                 onMouseUp={handlePressEnd}
-                onMouseLeave={handlePressEnd}
+                /* onMouseLeave={handlePressEnd} */
                 onTouchStart={() => handlePressStart(index)}
                 onTouchEnd={handlePressEnd}
               >
