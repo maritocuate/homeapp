@@ -124,7 +124,7 @@ body {
   top: 100%;
   left: 0;
   right: 0;
-  height: calc(48px * 1.5 / 8); /* $tile-offset */
+  height: calc(48px * 1.5 / 8);
   transform: rotateX(-90deg);
   transform-origin: top center;
 }
@@ -138,28 +138,11 @@ body {
   transform-origin: right center;
 }
 
-/* Icon Colors */
-.tile .fa-facebook {
-  color: #3b5998;
-}
-.tile .fa-instagram {
-  color: #5c3d2e;
-}
-.tile .fa-linkedin {
-  color: #007fb1;
-}
-.tile .fa-twitter {
-  color: #00aced;
-}
-.tile .fa-github {
-  color: #4183c4;
-}
-.tile .fa-codepen {
-  color: #000;
-}
-.tile .fa-google-plus {
-  color: #d34836;
-}
-.tile .fa-youtube {
-  color: #e62117;
+@media screen and (max-width: 500px) {
+  .tiles {
+    position: absolute;
+    width: 14rem;
+    left: 1rem;
+    transform: rotateX(55deg) rotateZ(-20deg);
+  }
 }
