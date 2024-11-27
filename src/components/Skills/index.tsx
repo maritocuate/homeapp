@@ -47,7 +47,7 @@ export default function Skills() {
 
   const playNote = () => {
     const now = Tone.now()
-    synth.triggerAttack(odeToJoy[indexTheme], now)
+    synth.triggerAttack(homeAlone[indexTheme], now)
     synth.triggerRelease(now + 0.5)
   }
 
