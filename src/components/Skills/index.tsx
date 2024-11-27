@@ -54,6 +54,7 @@ export default function Skills() {
   return (
     <div className="section">
       <div className="container-skills">
+        <h1 className="header">Key Skills</h1>
         <div className="tiles">
           {socialMedia.map(({ type }, index) => (
             <div className="tile" key={index}>
