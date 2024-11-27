@@ -44,9 +44,14 @@ export default defineConfig({
             handler: 'StaleWhileRevalidate',
             options: {
               cacheName: 'pdf-cache',
+              expiration: {
+                maxAgeSeconds: 3600, // 1 hora
+              },
             },
           },
         ],
+        skipWaiting: true, // Fuerza al SW a activarse inmediatamente
+        clientsClaim: true, // Controla las pestañas abiertas automáticamente
       },
     }),
   ],
@@ -57,5 +62,6 @@ export default defineConfig({
         main: 'index.html',
       },
     },
+    assetsDir: 'images',
   },
 })
