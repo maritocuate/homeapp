@@ -14,7 +14,21 @@ const socialMedia = [
   { type: 'postgresql' },
   { type: 'swift' },
 ]
-const odeToJoy = ['E4', 'E4', 'F4', 'G4', 'G4', 'F4', 'E4', 'D4']
+const homeAlone = [
+  'G4',
+  'E4',
+  'G4',
+  'E4',
+  'C5',
+  'G4',
+  'D4',
+  'A4',
+  'G4',
+  'C4',
+  'F4',
+  'E4',
+  'D4',
+]
 export default function Skills() {
   const [pressedIndex, setPressedIndex] = useState<null | number>(null)
   const [indexTheme, setIndexTheme] = useState(0)
@@ -23,7 +37,7 @@ export default function Skills() {
   const handlePressStart = (index: number) => {
     setPressedIndex(index)
     setIndexTheme(indexTheme + 1)
-    if (indexTheme === odeToJoy.length - 1) setIndexTheme(0)
+    if (indexTheme === homeAlone.length - 1) setIndexTheme(0)
     playNote()
   }
   const handlePressEnd = (e: React.MouseEvent | React.TouchEvent) => {
