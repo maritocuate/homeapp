@@ -21,7 +21,13 @@ const Skills: React.FC = () => {
   return (
     <div className="section">
       <div className="container-skills">
-        <h1 className="header">Key Skills</h1>
+        <div className="skills-section">
+          <h1 className="header">Key Skills</h1>
+          <p className="about-description">
+            Some general abilities that I have acquired in the last years (with
+            sound 😃).
+          </p>
+        </div>
         <div className="tiles">
           {keySkills.map((type, index) => (
             <SkillTile
