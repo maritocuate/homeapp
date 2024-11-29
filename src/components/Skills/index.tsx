@@ -24,8 +24,7 @@ const Skills: React.FC = () => {
         <div className="skills-section">
           <h1 className="header">Key Skills</h1>
           <p className="about-description">
-            Some general abilities that I have acquired in the last years (with
-            sound 😃).
+            Some general abilities that I have acquired in the last years.
           </p>
         </div>
         <div className="tiles">
