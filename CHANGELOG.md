@@ -1,0 +1,7 @@
+# [1.3.0](https://github.com/maritocuate/homeapp/compare/v1.2.0...v1.3.0) (2024-11-29)
+
+
+### Features
+
+* **docs:** package update ([d3884d0](https://github.com/maritocuate/homeapp/commit/d3884d01b00afd89bc07fa0f4fca321c3d052524))
+* **docs:** package update ([987bca5](https://github.com/maritocuate/homeapp/commit/987bca54f422405b18857716eb2aee5e4a82b091))
