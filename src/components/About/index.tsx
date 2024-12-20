@@ -4,7 +4,7 @@ export default function About() {
   return (
     <div className="section">
       <section className="about-section">
-        <h1 className="header">About me</h1>
+        <h2 className="header">About me</h2>
         <p className="about-description">
           Hi! My name is Mario and I live in Buenos Aires, Argentina. Ive been
           programming for about 10 years (when Flash sites were very popular).

@@ -22,7 +22,7 @@ const Skills: React.FC = () => {
     <div className="section">
       <div className="container-skills">
         <div className="skills-section">
-          <h1 className="header">Key Skills</h1>
+          <h2 className="header">Key Skills</h2>
           <p className="about-description">
             Some general abilities that I have acquired in the last years.
           </p>
