@@ -9,7 +9,7 @@ export default function Contact() {
 
   const handleClick = async () => {
     try {
-      const response = await fetch('https://www.aatest.host/api/survey', {
+      const response = await fetch('/api/survey', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

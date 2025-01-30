@@ -66,4 +66,13 @@ export default defineConfig({
     },
     assetsDir: 'images',
   },
+  server: {
+    proxy: {
+      '/api': {
+        target: 'https://www.aatest.host',
+        changeOrigin: true,
+        rewrite: path => path.replace(/^\/api/, ''),
+      },
+    },
+  },
 })
