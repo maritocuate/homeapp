@@ -27,7 +27,11 @@ export default function Contact() {
       const result = await response.json()
       console.log(result)
     } catch (err) {
-      console.log(err.message)
+      if (err instanceof Error) {
+        console.log(err.message)
+      } else {
+        console.log('Unknown error occurred')
+      }
     } finally {
       console.log(false)
     }
