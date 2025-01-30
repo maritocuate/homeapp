@@ -7,6 +7,32 @@ export default function Contact() {
     resume: '/resume.pdf',
   }
 
+  const handleClick = async () => {
+    try {
+      const response = await fetch('https://www.aatest.host/api/survey', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          type: 'new_prop',
+          score: 5,
+        }),
+      })
+
+      if (!response.ok) {
+        throw new Error('Error en el servidor: ' + response.statusText)
+      }
+
+      const result = await response.json()
+      console.log(result)
+    } catch (err) {
+      console.log(err.message)
+    } finally {
+      console.log(false)
+    }
+  }
+
   return (
     <div className="section">
       <section className="section-contact">
@@ -31,7 +57,9 @@ export default function Contact() {
             <span className="link">resume</span>
           </a>
         </div>
-        <span className="email">MARIO300@GMAIL.COM</span>
+        <span className="email" onClick={handleClick}>
+          MARIO300@GMAIL.COM
+        </span>
       </section>
     </div>
   )
