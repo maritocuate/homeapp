@@ -7,7 +7,18 @@ main {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
   max-height: 100vh;
+  width: 100%;
 }
+
+main.os-windows,
+main.os-ubuntu {
+  width: 101%;
+}
+
+main.os-macos {
+  width: 100%;
+}
+
 .header {
   font-family: 'Bebas Neue', sans-serif;
   text-align: left;
