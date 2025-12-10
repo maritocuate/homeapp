@@ -8,7 +8,7 @@ export default function About() {
         <p className="about-description">
           Hi! My name is Mario and I live in Buenos Aires, Argentina. Ive been
           programming for about 10 years (when Flash sites were very popular).
-          Over the past three yeard, I've been extensively working with React
+          Over the past four years, I've been extensively working with React
           and NextJs to keep the same language in the backend. In addition to my
           frontend expertise, I have hands-on experience with both relational
           and non-relational databases. In my life I have worked in product and
