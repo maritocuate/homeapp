@@ -1,3 +1,10 @@
+# [1.8.0](https://github.com/maritocuate/homeapp/compare/v1.7.0...v1.8.0) (2025-12-10)
+
+
+### Features
+
+* Add skills section ([e6b73bc](https://github.com/maritocuate/homeapp/commit/e6b73bc0110ff05759b15d69ea633efb498adb6d))
+
 # [1.7.0](https://github.com/maritocuate/homeapp/compare/v1.6.0...v1.7.0) (2025-12-10)
 
 
