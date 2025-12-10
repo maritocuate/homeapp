@@ -2,29 +2,18 @@ import React from 'react'
 
 interface SkillTileProps {
   type: string
-  isPressed: boolean
-  onPressStart: () => void
-  onPressEnd: (e: React.MouseEvent | React.TouchEvent) => void
 }
 
-const SkillTile: React.FC<SkillTileProps> = ({
-  type,
-  isPressed,
-  onPressStart,
-  onPressEnd,
-}) => (
-  <div className="tile">
-    <div className="shadow"></div>
-    <div
-      className={`item ${isPressed ? 'pressed' : ''}`}
-      onMouseDown={onPressStart}
-      onMouseUp={onPressEnd}
-      onTouchStart={onPressStart}
-      onTouchEnd={onPressEnd}
-    >
-      <img src={`/images/${type}.png`} alt={type} width={48} height="auto" />
+const SkillTile: React.FC<SkillTileProps> = ({ type }) => {
+  const displayText = `#${type.toUpperCase()}`
+  
+  return (
+    <div className="tile">
+      <div className="item">
+        {displayText}
+      </div>
     </div>
-  </div>
-)
+  )
+}
 
 export default SkillTile

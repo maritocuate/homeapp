@@ -4,7 +4,7 @@ import Contact from './components/Contact'
 import Gradient from './components/Gradient'
 import Home from './components/Home'
 import { useOperatingSystem, getOSClass } from './hooks/useOperatingSystem'
-// import Skills from './components/Skills'
+import Skills from './components/Skills'
 
 function App() {
   const operatingSystem = useOperatingSystem();
@@ -15,7 +15,7 @@ function App() {
       <Gradient />
       <Home />
       <About />
-      {/* <Skills /> */}
+      <Skills />
       <Contact />
     </main>
   )
