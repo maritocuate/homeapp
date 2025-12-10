@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/maritocuate/homeapp/compare/v1.4.0...v1.5.0) (2025-12-10)
+
+
+### Features
+
+* Update home copy ([3dd9423](https://github.com/maritocuate/homeapp/commit/3dd9423fd1b00b807e3d8c0accf591e3bf636241))
+
 # [1.4.0](https://github.com/maritocuate/homeapp/compare/v1.3.0...v1.4.0) (2024-11-29)
 
 
