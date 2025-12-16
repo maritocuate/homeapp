@@ -5,6 +5,7 @@ export default function Contact() {
     linkedin: 'https://www.linkedin.com/in/mario-quiroga-73299527/',
     github: 'https://github.com/maritocuate',
     resume: '/resume.pdf',
+    calendly: 'https://calendly.com/mario300/30min/',
   }
 
   const handleClick = async () => {
@@ -52,6 +53,12 @@ export default function Contact() {
             onClick={() => window.open(links.github, '_blank')}
           >
             github
+          </span>
+          <span
+            className="link"
+            onClick={() => window.open(links.calendly, '_blank')}
+          >
+            calendly
           </span>
           <a
             href={'https://marioquiroga.vercel.app' + links.resume}
