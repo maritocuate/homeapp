@@ -1,3 +1,10 @@
+# [1.9.0](https://github.com/maritocuate/homeapp/compare/v1.8.0...v1.9.0) (2025-12-16)
+
+
+### Features
+
+* Add calendly link ([9a6b9aa](https://github.com/maritocuate/homeapp/commit/9a6b9aa6ca7016bfd03b2a84a8942798b3f53d1b))
+
 # [1.8.0](https://github.com/maritocuate/homeapp/compare/v1.7.0...v1.8.0) (2025-12-10)
 
 
